@@ -1,0 +1,1 @@
+export {DetailsPhotoComponent as PhotoPage} from "./ui/PhotoPage.async"
