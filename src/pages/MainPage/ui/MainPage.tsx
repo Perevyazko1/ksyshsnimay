@@ -1,5 +1,6 @@
 import {memo, ReactNode} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
+import cls from "./MainPage.module.scss"
 
 interface MainPageProps {
     className?: string
@@ -20,9 +21,11 @@ interface MainPageProps {
 
     return (
         <div
-            className={classNames('', mods, [className])}
+            className={classNames(cls.MainPage, mods, [className])}
             {...otherProps}
         >
+            <div className={cls.Brand}>Проверка Брэнд</div>
+            <div className={cls.Link}>Проверка ссылок</div>
             {children}
         </div>
     );
