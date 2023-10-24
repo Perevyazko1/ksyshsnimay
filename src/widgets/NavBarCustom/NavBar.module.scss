@@ -1,0 +1,41 @@
+.NavBarCustom{
+
+
+}
+.bg-body-tertiary {
+  background: var(--background-color-main);
+}
+.Brand{
+    //padding-top: var(--bs-navbar-brand-padding-y);
+    //padding-bottom: var(--bs-navbar-brand-padding-y);
+    //margin-right: var(--bs-navbar-brand-margin-end);
+    color: #000000;
+    text-indent: -1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: left;
+    font-size: var(--font-size-brand);
+    font-family: var(--font-family-brand);
+}
+.Link{
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
+    font-family: var(--font-family-navbar);
+    font-size: var(--font-size-navbar);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #323436;
+    letter-spacing: 0.0625em;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.ContainerLink{
+    position: absolute;
+    right: 10px
+}
+@media screen and (max-width: 990px){
+    .ContainerLink{
+        position: static;
+    }
+}

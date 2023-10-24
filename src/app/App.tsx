@@ -4,12 +4,14 @@ import {MainPage} from "../pages/MainPage";
 import {PhotoPage} from "../pages/PhotoPage";
 import {ContactPage} from "../pages/ContactPage";
 import {VideoPage} from "../pages/VideoPage";
+import {NavBarCustom} from "../widgets/NavBarCustom/NavBarCustom";
 
 
 
 function App() {
   return (
     <>
+        <NavBarCustom/>
         <Routes>
             <Route path={"/ksyshev"} element={<MainPage/>}/>
             <Route path={"/photo"} element={<PhotoPage/>}/>

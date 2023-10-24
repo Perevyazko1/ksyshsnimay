@@ -1,6 +1,7 @@
 import {memo, ReactNode} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
 import cls from "./MainPage.module.scss"
+import {postApi} from "../../../providers/api/RtkService";
 
 interface MainPageProps {
     className?: string
@@ -9,6 +10,9 @@ interface MainPageProps {
 
 
  const MainPage = memo((props: MainPageProps) => {
+
+     const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-collage"})
+     console.log(JSON.stringify(data))
     const {
         className,
         children,
@@ -26,6 +30,12 @@ interface MainPageProps {
         >
             <div className={cls.Brand}>Проверка Брэнд</div>
             <div className={cls.Link}>Проверка ссылок</div>
+            {data && data.map((item) => (
+              <div>
+                  {item.image}
+              </div>
+            ))}
+
             {children}
         </div>
     );
