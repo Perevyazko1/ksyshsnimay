@@ -1,3 +1,24 @@
 .PhotoPage{
+    display: flex;
+}
+.WrapperPhoto{
+    width: 313px;
+    height: 393px;
+    overflow: hidden;
+    border-radius: 1%;
+    margin: 20px;
+}
+.Photo{
+    width: 313px;
+    height: 393px;
 
+    transition: transform 0.7s;
+    transform: scale(1);
+
+}
+.PhotoHovered{
+        width: 313px;
+    height: 393px;
+    transition: transform 0.7s;
+    transform: scale(1.2);
 }

@@ -12,7 +12,7 @@ interface MainPageProps {
  const MainPage = memo((props: MainPageProps) => {
 
      const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-collage"})
-     console.log(JSON.stringify(data))
+     console.log(data,error)
     const {
         className,
         children,
@@ -28,12 +28,8 @@ interface MainPageProps {
             className={classNames(cls.MainPage, mods, [className])}
             {...otherProps}
         >
-            <div className={cls.Brand}>Проверка Брэнд</div>
-            <div className={cls.Link}>Проверка ссылок</div>
             {data && data.map((item) => (
-              <div>
-                  {item.image}
-              </div>
+                  <img key={item.image} src={item.image} className={cls.Collage} alt={"collage"}/>
             ))}
 
             {children}

@@ -18,7 +18,6 @@ function App() {
             <Route path={"/video"} element={<VideoPage/>}/>
             <Route path={"/contact"} element={<ContactPage/>}/>
         </Routes>
-
     </>
   );
 }

@@ -1,3 +1,15 @@
 .VideoPage{
+    display: flex;
 
+}
+.WrapperVideo{
+    width: 313px;
+    height: 503px;
+    overflow: hidden;
+    border-radius: 1%;
+    margin: 20px;
+
+}
+.Video{
+    width: 100%;
 }
