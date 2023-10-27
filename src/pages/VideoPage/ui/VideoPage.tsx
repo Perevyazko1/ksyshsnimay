@@ -11,7 +11,7 @@ interface VideoPageProps {
 
 
 const VideoPage = memo((props: VideoPageProps) => {
-    const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-video"})
+    const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-video/"})
     const [isHovered, setIsHovered] = useState<number | null>(null);
 
     const videoRefs = useRef<HTMLVideoElement[]>([]);

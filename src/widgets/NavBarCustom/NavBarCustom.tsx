@@ -34,7 +34,7 @@ export const NavBarCustom = memo((props: NavBarProps) => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={cls.ContainerLink}>
-                    <Nav.Link className={cls.Link} href="/ksyshev">Главная</Nav.Link>
+                    <Nav.Link className={cls.Link} href="/ksyshsnimay">Главная</Nav.Link>
                     <Nav.Link className={cls.Link} href="/video">Видео</Nav.Link>
                     <Nav.Link className={cls.Link} href="/photo">Фото</Nav.Link>
                     <Nav.Link className={cls.Link} href="/contact">Контакты</Nav.Link>

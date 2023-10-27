@@ -13,7 +13,7 @@ interface PhotoPageProps {
 
 const PhotoPage = memo((props: PhotoPageProps) => {
 
-    const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-photo"})
+    const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-photo/"})
     const [isHovered, setIsHovered] = useState<number | null>(null);
     const [isLoaded, setIsLoaded] = useState<number | null>(null);
     const [loadedIndexes, setLoadedIndexes] = useState<number[]>([]);

@@ -11,8 +11,8 @@ interface MainPageProps {
 
  const MainPage = memo((props: MainPageProps) => {
 
-     const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-collage"})
-     console.log(data,error)
+     const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-collage/"})
+
     const {
         className,
         children,
@@ -31,7 +31,6 @@ interface MainPageProps {
             {data && data.map((item) => (
                   <img key={item.image} src={item.image} className={cls.Collage} alt={"collage"}/>
             ))}
-
             {children}
         </div>
     );
