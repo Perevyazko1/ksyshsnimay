@@ -13,7 +13,7 @@ function App() {
     <>
         <NavBarCustom/>
         <Routes>
-            <Route path={"/ksyshev"} element={<MainPage/>}/>
+            <Route path={"/ksyshsnimay"} element={<MainPage/>}/>
             <Route path={"/photo"} element={<PhotoPage/>}/>
             <Route path={"/video"} element={<VideoPage/>}/>
             <Route path={"/contact"} element={<ContactPage/>}/>

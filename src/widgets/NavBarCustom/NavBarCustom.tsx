@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Link} from "react-router-dom";
+
 import cls from "./NavBar.module.scss"
 
 interface NavBarProps {
@@ -34,10 +36,11 @@ export const NavBarCustom = memo((props: NavBarProps) => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={cls.ContainerLink}>
-                    <Nav.Link className={cls.Link} href="/ksyshsnimay">Главная</Nav.Link>
-                    <Nav.Link className={cls.Link} href="/video">Видео</Nav.Link>
-                    <Nav.Link className={cls.Link} href="/photo">Фото</Nav.Link>
-                    <Nav.Link className={cls.Link} href="/contact">Контакты</Nav.Link>
+                      {/* eslint-disable-next-line react/jsx-no-undef */}
+                    <Link className={cls.Link} to="/ksyshsnimay">Главная</Link>
+                    <Link className={cls.Link} to="/video">Видео</Link>
+                    <Link className={cls.Link} to="/photo">Фото</Link>
+                    <Link className={cls.Link} to="/contact">Контакты</Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
