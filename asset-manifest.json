@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/ksyshsnimay/static/css/main.5a82a73e.css",
-    "main.js": "/ksyshsnimay/static/js/main.ecbbd00d.js",
-    "static/css/52.b6b7aa1a.chunk.css": "/ksyshsnimay/static/css/52.b6b7aa1a.chunk.css",
-    "static/js/52.0a01fd6a.chunk.js": "/ksyshsnimay/static/js/52.0a01fd6a.chunk.js",
-    "static/css/486.af80d867.chunk.css": "/ksyshsnimay/static/css/486.af80d867.chunk.css",
-    "static/js/486.e364e5f7.chunk.js": "/ksyshsnimay/static/js/486.e364e5f7.chunk.js",
-    "static/js/86.436db4db.chunk.js": "/ksyshsnimay/static/js/86.436db4db.chunk.js",
-    "static/css/425.2967aeba.chunk.css": "/ksyshsnimay/static/css/425.2967aeba.chunk.css",
-    "static/js/425.7f1725f7.chunk.js": "/ksyshsnimay/static/js/425.7f1725f7.chunk.js",
+    "main.css": "/ksyshsnimay/static/css/main.db98e86e.css",
+    "main.js": "/ksyshsnimay/static/js/main.18051d72.js",
+    "static/css/52.34c1dc4a.chunk.css": "/ksyshsnimay/static/css/52.34c1dc4a.chunk.css",
+    "static/js/52.02f43694.chunk.js": "/ksyshsnimay/static/js/52.02f43694.chunk.js",
+    "static/css/486.745f4497.chunk.css": "/ksyshsnimay/static/css/486.745f4497.chunk.css",
+    "static/js/486.6582cdae.chunk.js": "/ksyshsnimay/static/js/486.6582cdae.chunk.js",
+    "static/css/904.6829d98a.chunk.css": "/ksyshsnimay/static/css/904.6829d98a.chunk.css",
+    "static/js/904.18fc5b35.chunk.js": "/ksyshsnimay/static/js/904.18fc5b35.chunk.js",
+    "static/css/425.2e4791f4.chunk.css": "/ksyshsnimay/static/css/425.2e4791f4.chunk.css",
+    "static/js/425.673a0c35.chunk.js": "/ksyshsnimay/static/js/425.673a0c35.chunk.js",
+    "static/js/92.7cf5fe79.chunk.js": "/ksyshsnimay/static/js/92.7cf5fe79.chunk.js",
+    "static/media/contact.png": "/ksyshsnimay/static/media/contact.f61303dde57da68189e3.png",
     "static/media/CeraPro-Regular.eot": "/ksyshsnimay/static/media/CeraPro-Regular.964f3bbc1023238792f1.eot",
     "static/media/CeraPro-Regular.ttf": "/ksyshsnimay/static/media/CeraPro-Regular.1b7f7963cbafd9cc1e33.ttf",
     "static/media/CeraPro-Regular.woff": "/ksyshsnimay/static/media/CeraPro-Regular.c7da3a40565f40d48ea7.woff",
@@ -20,18 +23,20 @@
     "static/media/CeraPro-Regular.woff2": "/ksyshsnimay/static/media/CeraPro-Regular.98174a78a68fda76bc80.woff2",
     "static/media/Airfool.woff": "/ksyshsnimay/static/media/Airfool.2c8fdd3e9f4d7d4c970d.woff",
     "index.html": "/ksyshsnimay/index.html",
-    "main.5a82a73e.css.map": "/ksyshsnimay/static/css/main.5a82a73e.css.map",
-    "main.ecbbd00d.js.map": "/ksyshsnimay/static/js/main.ecbbd00d.js.map",
-    "52.b6b7aa1a.chunk.css.map": "/ksyshsnimay/static/css/52.b6b7aa1a.chunk.css.map",
-    "52.0a01fd6a.chunk.js.map": "/ksyshsnimay/static/js/52.0a01fd6a.chunk.js.map",
-    "486.af80d867.chunk.css.map": "/ksyshsnimay/static/css/486.af80d867.chunk.css.map",
-    "486.e364e5f7.chunk.js.map": "/ksyshsnimay/static/js/486.e364e5f7.chunk.js.map",
-    "86.436db4db.chunk.js.map": "/ksyshsnimay/static/js/86.436db4db.chunk.js.map",
-    "425.2967aeba.chunk.css.map": "/ksyshsnimay/static/css/425.2967aeba.chunk.css.map",
-    "425.7f1725f7.chunk.js.map": "/ksyshsnimay/static/js/425.7f1725f7.chunk.js.map"
+    "main.db98e86e.css.map": "/ksyshsnimay/static/css/main.db98e86e.css.map",
+    "main.18051d72.js.map": "/ksyshsnimay/static/js/main.18051d72.js.map",
+    "52.34c1dc4a.chunk.css.map": "/ksyshsnimay/static/css/52.34c1dc4a.chunk.css.map",
+    "52.02f43694.chunk.js.map": "/ksyshsnimay/static/js/52.02f43694.chunk.js.map",
+    "486.745f4497.chunk.css.map": "/ksyshsnimay/static/css/486.745f4497.chunk.css.map",
+    "486.6582cdae.chunk.js.map": "/ksyshsnimay/static/js/486.6582cdae.chunk.js.map",
+    "904.6829d98a.chunk.css.map": "/ksyshsnimay/static/css/904.6829d98a.chunk.css.map",
+    "904.18fc5b35.chunk.js.map": "/ksyshsnimay/static/js/904.18fc5b35.chunk.js.map",
+    "425.2e4791f4.chunk.css.map": "/ksyshsnimay/static/css/425.2e4791f4.chunk.css.map",
+    "425.673a0c35.chunk.js.map": "/ksyshsnimay/static/js/425.673a0c35.chunk.js.map",
+    "92.7cf5fe79.chunk.js.map": "/ksyshsnimay/static/js/92.7cf5fe79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a82a73e.css",
-    "static/js/main.ecbbd00d.js"
+    "static/css/main.db98e86e.css",
+    "static/js/main.18051d72.js"
   ]
 }
