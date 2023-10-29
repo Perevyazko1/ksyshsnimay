@@ -31,7 +31,7 @@ export const NavBarCustom = memo((props: NavBarProps) => {
             {...otherProps}
         >
             <Navbar  collapseOnSelect expand="lg" className="bg-body-tertiary">
-              <Container>
+              <Container className={cls.Container}>
                 <Navbar.Brand className={cls.Brand} href="#home">KSYSHSNIMAY</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
