@@ -17,7 +17,7 @@ const PhotoPage = memo((props: PhotoPageProps) => {
   const [isLoaded, setIsLoaded] = useState<number | null>(null);
   const [loadedIndexes, setLoadedIndexes] = useState<number[]>([]);
   const [hoveredIndex, setHoveredIndex] = useState<number>(-1);
-  const [isAllLoaded, setIsAllLoaded] = useState(false); // Добавьте новое состояние isAllLoaded
+  const [isAllLoaded, setIsAllLoaded] = useState(false);
 
   const handleRowHover = (index: number) => {
     if ('ontouchstart' in window) {
@@ -78,6 +78,7 @@ const PhotoPage = memo((props: PhotoPageProps) => {
                   onTouchStart={() => handleRowHover(index)}
                   onLoad={() => handleImageLoad(index)}
                   src={item.image}
+                  alt={"photo"}
                 />
             </div>
           )) }
