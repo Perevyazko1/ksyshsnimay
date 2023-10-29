@@ -1,3 +1,25 @@
 .ContactPage{
-
+    position: relative;
+}
+.BlockInfo{
+    position: absolute;
+    color: white;
+    font: var(--font-family-brand);
+    top:35%;
+    left: 0;
+    width: 100%;
+    text-indent: -1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 90%;
+    font-weight: normal;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+}
+.Poster{
+    width: 100%;
+}
+a{
+    color: white;
 }

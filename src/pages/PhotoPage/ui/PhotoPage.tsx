@@ -18,24 +18,25 @@ const PhotoPage = memo((props: PhotoPageProps) => {
     const [isLoaded, setIsLoaded] = useState<number | null>(null);
     const [loadedIndexes, setLoadedIndexes] = useState<number[]>([]);
     const pageWidth = useWindowWidth();
-    console.log(data)
-    console.log("проверка")
 
 
       const [hoveredIndex, setHoveredIndex] = useState<number>(-1);
 
 const handleRowHover = (index: number) => {
-  if (!('ontouchstart' in window)) {
-    // Обработка наведения курсора на десктопных устройствах
+  if ('ontouchstart' in window) {
+    if (index !== -1) {
+      setHoveredIndex(index);
+    } else {
+      setHoveredIndex(-1);
+    }
+  } else {
     setHoveredIndex(index);
   }
 };
 
 const handleRowLeave = () => {
-  if (!('ontouchstart' in window)) {
     // Обработка покидания курсора с элемента на десктопных устройствах
     setHoveredIndex(-1);
-  }
 };
 
 
@@ -54,31 +55,30 @@ const handleRowLeave = () => {
             className={classNames(cls.PhotoPage, mods, [className])}
             {...otherProps}
         >
-
-            {data? data.map((item,index) => (
+            <div className={cls.WrapperBlockPhoto}>
+                            {data? data.map((item,index) => (
                 <div
                     className={cls.WrapperPhoto}
                     key={index}
                 >
 
-                    {loadedIndexes.includes(index)?
-                        <Skeleton width={313} height={393} />:
+                    {/*{loadedIndexes.includes(index)?*/}
+
 
                         <img
                           className={(isHovered === index || hoveredIndex === index) ? cls.Photo : cls.PhotoHovered}
                           onMouseEnter={() => handleRowHover(index)}
                           onMouseLeave={handleRowLeave}
                           onTouchStart={() => handleRowHover(index)}
-                          onTouchEnd={handleRowLeave}
                           onLoad={() => setLoadedIndexes(prevIndexes => [...prevIndexes, index])}
                           src={item.image}
                         />
-
-                    }
+                        {/*// : <Skeleton width={313} height={393} />}*/}
 
 
                 </div>
             )):<Skeleton width={313} height={393} />}
+            </div>
 
             {children}
         </div>
