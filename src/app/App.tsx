@@ -12,14 +12,13 @@ import {BottomBlock} from "../shared/ui/BottomBlock/BottomBlock";
 function App() {
   return (
     <>
-        <NavBarCustom/>
+
         <Routes>
             <Route path={"/ksyshsnimay"} element={<MainPage/>}/>
             <Route path={"/photo"} element={<PhotoPage/>}/>
             <Route path={"/video"} element={<VideoPage/>}/>
             <Route path={"/contact"} element={<ContactPage/>}/>
         </Routes>
-        <BottomBlock/>
     </>
   );
 }

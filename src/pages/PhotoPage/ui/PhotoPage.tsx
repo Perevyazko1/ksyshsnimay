@@ -4,6 +4,7 @@ import {postApi} from "../../../providers/api/RtkService";
 import cls from "./PhotoPage.module.scss"
 import {useWindowWidth} from "shared/hooks/useWindowWidth/useWindowWidth";
 import Skeleton from 'react-loading-skeleton';
+import {PageWrapper} from "../../../shared/ui/PageWrapper/PageWrapper";
 
 interface PhotoPageProps {
     className?: string
@@ -51,37 +52,39 @@ const handleRowLeave = () => {
     };
 
     return (
-        <div
-            className={classNames(cls.PhotoPage, mods, [className])}
-            {...otherProps}
-        >
-            <div className={cls.WrapperBlockPhoto}>
-                            {data? data.map((item,index) => (
-                <div
-                    className={cls.WrapperPhoto}
-                    key={index}
-                >
+        <PageWrapper>
+            <div
+                className={classNames(cls.PhotoPage, mods, [className])}
+                {...otherProps}
+            >
+                <div className={cls.WrapperBlockPhoto}>
+                                {data? data.map((item,index) => (
+                    <div
+                        className={cls.WrapperPhoto}
+                        key={index}
+                    >
 
-                    {/*{loadedIndexes.includes(index)?*/}
-
-
-                        <img
-                          className={(isHovered === index || hoveredIndex === index) ? cls.Photo : cls.PhotoHovered}
-                          onMouseEnter={() => handleRowHover(index)}
-                          onMouseLeave={handleRowLeave}
-                          onTouchStart={() => handleRowHover(index)}
-                          onLoad={() => setLoadedIndexes(prevIndexes => [...prevIndexes, index])}
-                          src={item.image}
-                        />
-                        {/*// : <Skeleton width={313} height={393} />}*/}
+                        {/*{loadedIndexes.includes(index)?*/}
 
 
+                            <img
+                              className={(isHovered === index || hoveredIndex === index) ? cls.Photo : cls.PhotoHovered}
+                              onMouseEnter={() => handleRowHover(index)}
+                              onMouseLeave={handleRowLeave}
+                              onTouchStart={() => handleRowHover(index)}
+                              onLoad={() => setLoadedIndexes(prevIndexes => [...prevIndexes, index])}
+                              src={item.image}
+                            />
+                            {/*// : <Skeleton width={313} height={393} />}*/}
+
+
+                    </div>
+                )):<Skeleton width={313} height={393} />}
                 </div>
-            )):<Skeleton width={313} height={393} />}
-            </div>
 
-            {children}
-        </div>
+                {children}
+            </div>
+        </PageWrapper>
     );
 });
 

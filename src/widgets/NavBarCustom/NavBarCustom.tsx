@@ -1,4 +1,4 @@
-import {memo, ReactNode} from 'react';
+import {memo, ReactNode, useEffect, useState} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -15,6 +15,7 @@ interface NavBarProps {
 
 
 export const NavBarCustom = memo((props: NavBarProps) => {
+
     const {
         className,
         children,
@@ -34,7 +35,7 @@ export const NavBarCustom = memo((props: NavBarProps) => {
               <Container className={cls.Container}>
                 <Navbar.Brand className={cls.Brand} href="#home">KSYSHSNIMAY</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse  id="responsive-navbar-nav">
                   <Nav className={cls.ContainerLink}>
                       {/* eslint-disable-next-line react/jsx-no-undef */}
                     <Link className={cls.Link} to="/ksyshsnimay">Главная</Link>

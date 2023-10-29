@@ -3,6 +3,7 @@ import {classNames, Mods} from "shared/lib/classNames/classNames";
 import AudioPlayer from "../../../features/player/player";
 import {postApi} from "../../../providers/api/RtkService";
 import cls from "./VideoPage.module.scss";
+import {PageWrapper} from "../../../shared/ui/PageWrapper/PageWrapper";
 
 interface VideoPageProps {
     className?: string
@@ -48,27 +49,29 @@ const VideoPage = memo((props: VideoPageProps) => {
     };
 
     return (
-        <div
-            className={classNames(cls.VideoPage, mods, [className])}
-            {...otherProps}
-        >1234
-            {data && data.map((item, index) => (
-              <div key={index}
-                   className={cls.WrapperVideo}>
-                  <video
-                      className={cls.Video}
-                      src={item.video}
-                      ref={(el) => {
-                      if (el) videoRefs.current[index] = el;
-                    }}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={() => handleMouseLeave(index)}
-                  />
-              </div>
-            ))}
+        <PageWrapper>
+            <div
+                className={classNames(cls.VideoPage, mods, [className])}
+                {...otherProps}
+            >1234
+                {data && data.map((item, index) => (
+                  <div key={index}
+                       className={cls.WrapperVideo}>
+                      <video
+                          className={cls.Video}
+                          src={item.video}
+                          ref={(el) => {
+                          if (el) videoRefs.current[index] = el;
+                        }}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
+                      />
+                  </div>
+                ))}
 
-            {children}
-        </div>
+                {children}
+            </div>
+        </PageWrapper>
     );
 });
 export default VideoPage
