@@ -1,9 +1,9 @@
 import React, {memo, ReactNode, useEffect, useState} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
-import {postApi} from "../../../providers/api/RtkService";
+import {postApi} from "providers/api/RtkService";
 import cls from "./PhotoPage.module.scss";
 import Skeleton from 'react-loading-skeleton';
-import {PageWrapper} from "../../../shared/ui/PageWrapper/PageWrapper";
+import {PageWrapper} from "shared/ui/PageWrapper/PageWrapper";
 
 interface PhotoPageProps {
   className?: string,
@@ -76,7 +76,7 @@ const PhotoPage = memo((props: PhotoPageProps) => {
                   onMouseEnter={() => handleRowHover(index)}
                   onMouseLeave={handleRowLeave}
                   onTouchStart={() => handleRowHover(index)}
-                  onLoad={() => handleImageLoad(index)} // Вызовите функцию обратного вызова при загрузке картинки
+                  onLoad={() => handleImageLoad(index)}
                   src={item.image}
                 />
             </div>
