@@ -1,11 +1,14 @@
-.ContactPage{
+.BottomBlock{
     position: relative;
+    background: var(--background-color-main);
+    width: 100%;
+    height: 4rem;
 }
 .BlockInfo{
     position: absolute;
     color: var(--background-color-main);;
     font: var(--font-family-brand);
-    top:35%;
+    top:40%;
     left: 0;
     width: 100%;
     text-indent: -1em;
@@ -17,9 +20,6 @@
     white-space: nowrap;
     text-align: center;
 }
-.Poster{
-    width: 100%;
-}
 a{
-    color: var(--background-color-main);;
+    color: white;
 }

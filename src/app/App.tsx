@@ -5,6 +5,7 @@ import {PhotoPage} from "../pages/PhotoPage";
 import {ContactPage} from "../pages/ContactPage";
 import {VideoPage} from "../pages/VideoPage";
 import {NavBarCustom} from "../widgets/NavBarCustom/NavBarCustom";
+import {BottomBlock} from "../shared/ui/BottomBlock/BottomBlock";
 
 
 
@@ -18,6 +19,7 @@ function App() {
             <Route path={"/video"} element={<VideoPage/>}/>
             <Route path={"/contact"} element={<ContactPage/>}/>
         </Routes>
+        <BottomBlock/>
     </>
   );
 }
