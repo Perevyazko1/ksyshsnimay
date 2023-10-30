@@ -4,6 +4,7 @@ import {postApi} from "providers/api/RtkService";
 import cls from "./PhotoPage.module.scss";
 import Skeleton from 'react-loading-skeleton';
 import {PageWrapper} from "shared/ui/PageWrapper/PageWrapper";
+import {Loader} from "shared/ui/Loader/Loader";
 
 interface PhotoPageProps {
   className?: string,
@@ -18,6 +19,7 @@ const PhotoPage = memo((props: PhotoPageProps) => {
   const [loadedIndexes, setLoadedIndexes] = useState<number[]>([]);
   const [hoveredIndex, setHoveredIndex] = useState<number>(-1);
   const [isAllLoaded, setIsAllLoaded] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
 
   const handleRowHover = (index: number) => {
     if ('ontouchstart' in window) {
@@ -36,6 +38,10 @@ const PhotoPage = memo((props: PhotoPageProps) => {
   };
 
   useEffect(() => {
+    setTimeout(() => {
+      setShowLoader(true);
+    }, 500);
+
     if (data && loadedIndexes.length === data.length) {
       setIsAllLoaded(true);
     }
@@ -61,6 +67,9 @@ const PhotoPage = memo((props: PhotoPageProps) => {
         className={classNames(cls.PhotoPage, mods, [className])}
         {...otherProps}
       >
+        {showLoader && !data &&
+            <Loader/>
+        }
         <div className={cls.WrapperBlockPhoto}>
           {data && data.map((item, index) => (
             <div

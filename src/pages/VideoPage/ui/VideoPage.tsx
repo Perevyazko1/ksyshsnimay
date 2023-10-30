@@ -1,9 +1,10 @@
-import {memo, ReactNode, useRef, useState} from 'react';
+import React, {memo, ReactNode, useEffect, useRef, useState} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
 import AudioPlayer from "../../../features/player/player";
 import {postApi} from "../../../providers/api/RtkService";
 import cls from "./VideoPage.module.scss";
 import {PageWrapper} from "../../../shared/ui/PageWrapper/PageWrapper";
+import {Loader} from "../../../shared/ui/Loader/Loader";
 
 interface VideoPageProps {
     className?: string
@@ -14,6 +15,7 @@ interface VideoPageProps {
 const VideoPage = memo((props: VideoPageProps) => {
     const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-video/"})
     const [isHovered, setIsHovered] = useState<number | null>(null);
+    const [showLoader, setShowLoader] = useState(false);
 
     const videoRefs = useRef<HTMLVideoElement[]>([]);
 
@@ -37,6 +39,13 @@ const VideoPage = memo((props: VideoPageProps) => {
     }
   };
 
+  useEffect(()=>{
+      setTimeout(() => {
+            setShowLoader(true);
+        }, 500);
+
+  },[])
+
 
     const {
         className,
@@ -53,7 +62,10 @@ const VideoPage = memo((props: VideoPageProps) => {
             <div
                 className={classNames(cls.VideoPage, mods, [className])}
                 {...otherProps}
-            >1234
+            >
+                {showLoader && !data &&
+                    <Loader/>
+                }
                 {data && data.map((item, index) => (
                   <div key={index}
                        className={cls.WrapperVideo}>

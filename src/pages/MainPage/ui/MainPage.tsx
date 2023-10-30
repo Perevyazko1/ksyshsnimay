@@ -4,6 +4,7 @@ import cls from "./MainPage.module.scss"
 import {postApi} from "providers/api/RtkService";
 import {PageWrapper} from "shared/ui/PageWrapper/PageWrapper";
 import Skeleton from "react-loading-skeleton";
+import {Loader} from "shared/ui/Loader/Loader";
 
 interface MainPageProps {
     className?: string
@@ -16,16 +17,23 @@ interface MainPageProps {
     const {data, isLoading, error} = postApi.useGetDataQuery({param:"",source:"api-collage/"})
     const [loadedIndexes, setLoadedIndexes] = useState<number[]>([]);
     const [isAllLoaded, setIsAllLoaded] = useState(false);
+    const [showLoader, setShowLoader] = useState(false);
 
     const handleImageLoad = (index: number) => {
-        console.log(index)
         setLoadedIndexes(prevIndexes => [...prevIndexes, index]);
     };
       useEffect(() => {
+          setTimeout(() => {
+            setShowLoader(true);
+        }, 500);
+
     if (data && loadedIndexes.length === data.length) {
       setIsAllLoaded(true);
     }
   }, [data, loadedIndexes]);
+
+
+
 
 
 
@@ -46,6 +54,9 @@ interface MainPageProps {
                 className={classNames(cls.MainPage, mods, [className])}
                 {...otherProps}
             >
+                {showLoader && !data &&
+                    <Loader/>
+                }
                 {data && data.map((item, index) => (
                     <div>
                         {(!isAllLoaded || !loadedIndexes.includes(index)) && <Skeleton className={cls.CollageSkeleton} />}
