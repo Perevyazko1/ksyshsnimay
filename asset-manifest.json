@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/ksyshsnimay/static/css/main.db98e86e.css",
-    "main.js": "/ksyshsnimay/static/js/main.3dfeb0f0.js",
-    "static/css/52.eb21e725.chunk.css": "/ksyshsnimay/static/css/52.eb21e725.chunk.css",
-    "static/js/52.af5d0a55.chunk.js": "/ksyshsnimay/static/js/52.af5d0a55.chunk.js",
+    "main.js": "/ksyshsnimay/static/js/main.4d8e2944.js",
+    "static/css/647.85216916.chunk.css": "/ksyshsnimay/static/css/647.85216916.chunk.css",
+    "static/js/647.f5818457.chunk.js": "/ksyshsnimay/static/js/647.f5818457.chunk.js",
     "static/css/831.1e8d9765.chunk.css": "/ksyshsnimay/static/css/831.1e8d9765.chunk.css",
     "static/js/831.2c37e06f.chunk.js": "/ksyshsnimay/static/js/831.2c37e06f.chunk.js",
     "static/css/904.a5dd86e8.chunk.css": "/ksyshsnimay/static/css/904.a5dd86e8.chunk.css",
@@ -24,9 +24,9 @@
     "static/media/Airfool.woff": "/ksyshsnimay/static/media/Airfool.2c8fdd3e9f4d7d4c970d.woff",
     "index.html": "/ksyshsnimay/index.html",
     "main.db98e86e.css.map": "/ksyshsnimay/static/css/main.db98e86e.css.map",
-    "main.3dfeb0f0.js.map": "/ksyshsnimay/static/js/main.3dfeb0f0.js.map",
-    "52.eb21e725.chunk.css.map": "/ksyshsnimay/static/css/52.eb21e725.chunk.css.map",
-    "52.af5d0a55.chunk.js.map": "/ksyshsnimay/static/js/52.af5d0a55.chunk.js.map",
+    "main.4d8e2944.js.map": "/ksyshsnimay/static/js/main.4d8e2944.js.map",
+    "647.85216916.chunk.css.map": "/ksyshsnimay/static/css/647.85216916.chunk.css.map",
+    "647.f5818457.chunk.js.map": "/ksyshsnimay/static/js/647.f5818457.chunk.js.map",
     "831.1e8d9765.chunk.css.map": "/ksyshsnimay/static/css/831.1e8d9765.chunk.css.map",
     "831.2c37e06f.chunk.js.map": "/ksyshsnimay/static/js/831.2c37e06f.chunk.js.map",
     "904.a5dd86e8.chunk.css.map": "/ksyshsnimay/static/css/904.a5dd86e8.chunk.css.map",
@@ -37,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.db98e86e.css",
-    "static/js/main.3dfeb0f0.js"
+    "static/js/main.4d8e2944.js"
   ]
 }
