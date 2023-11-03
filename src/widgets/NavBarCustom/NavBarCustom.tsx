@@ -38,7 +38,7 @@ export const NavBarCustom = memo((props: NavBarProps) => {
                 <Navbar.Collapse  id="responsive-navbar-nav">
                   <Nav className={cls.ContainerLink}>
                       {/* eslint-disable-next-line react/jsx-no-undef */}
-                    <Link className={cls.Link} to="/ksyshsnimay">Главная</Link>
+                    <Link className={cls.Link} to="/">Главная</Link>
                     <Link className={cls.Link} to="/video">Видео</Link>
                     <Link className={cls.Link} to="/photo">Фото</Link>
                     <Link className={cls.Link} to="/contact">Контакты</Link>

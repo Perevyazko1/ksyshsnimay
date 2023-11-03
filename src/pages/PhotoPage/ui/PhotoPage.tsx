@@ -16,8 +16,8 @@ const PhotoPage = memo((props: PhotoPageProps) => {
   const { data, isLoading, error } = postApi.useGetDataQuery({ param: "", source: "api-photo/" });
   const [isHovered, setIsHovered] = useState<number | null>(null);
   const [isLoaded, setIsLoaded] = useState<number | null>(null);
-  const [loadedIndexes, setLoadedIndexes] = useState<number[]>([]);
   const [hoveredIndex, setHoveredIndex] = useState<number>(-1);
+  const [loadedIndexes, setLoadedIndexes] = useState<number[]>([]);
   const [isAllLoaded, setIsAllLoaded] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
 
